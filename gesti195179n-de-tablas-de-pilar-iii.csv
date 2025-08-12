@@ -1,0 +1,23 @@
+Tabla Output,Frecuencia,Origen Inicial,Inputs Requeridos,Cant. Inputs,Complejidad,Grupo Por Input,Origen Programación,Responsable Negocio,Responsable Técnico
+KM1,Trimestral,Normativa CMF,"R01, D03, Parámetros KM1, Base Instrumento Capital",4,Medio,G1,Lógica de Riesgos,Riesgo de Mercado,TI / Datos
+OV1,Trimestral,Normativa CMF,"R06, R07, R08",3,Bajo,G2,Lógica de Riesgos,Riesgo Operacional,TI / Datos
+LR1,Trimestral,Normativa CMF,"R01, R06, MB1, MC1",4,Medio,G3,Lógica de Riesgos,Riesgo de Liquidez,TI / Datos
+LR2,Trimestral,Normativa CMF,"R01, R06, MB1, MC1",4,Medio,G3,Lógica de Riesgos,Riesgo de Liquidez,TI / Datos
+LIQ1,Trimestral,Normativa CMF,"C49, ECD Pilar III",2,Medio,G4,Lógica de Riesgos,Riesgo de Liquidez,TI / Datos
+CC1,Semestral,Normativa CMF,"R01, R06, MB1, MC1, Base Instrumento Capital, ECD Pilar III",6,Alto,G5,Lógica de Capital,Finanzas / Capital,TI / Datos
+CC2,Semestral,Normativa CMF,"R01, MB1, MC1",3,Alto,G6,Lógica de Capital,Finanzas / Contabilidad,TI / Datos
+CR1,Semestral,Normativa CMF,"MC1, C11",2,Bajo,G7,Lógica de Riesgos,Riesgo de Crédito,TI / Datos
+CR2,Semestral,Normativa CMF,"C11, C12",2,Bajo,G8,Lógica de Riesgos,Riesgo de Crédito,TI / Datos
+CR3,Semestral,Normativa CMF,R06,1,Bajo,G9,Lógica de Riesgos,Riesgo de Crédito,TI / Datos
+LIQ2,Semestral,Normativa CMF,"C49, ECD Pilar III, NMD Plazos",3,Medio,G4,Lógica de Riesgos,Riesgo de Liquidez,TI / Datos
+ENC,Semestral,Normativa CMF,"C11, ECD Pilar III, Encaje (Monch y Monex)",3,Alto,G10,Lógica de Tesorería,Tesorería / Finanzas,TI / Datos
+CRB,Anual,Normativa CMF,"C19, C20, D03, R06 (99), R06 Inv, Cartera RF, Sectores Ind, Tabla 123",8,Alto,G11,Lógica de Riesgos,Riesgo de Crédito,TI / Datos
+OR1,Anual,Normativa CMF,R08,1,Bajo,G2,Lógica de Riesgos,Riesgo Operacional,TI / Datos
+,,,,,,,,,
+"Origen Inicial: Se refiere a la fuente primaria del requerimiento, en este caso, la normativa de la Comisión para el Mercado Financiero (CMF) para Pilar III. Los inputs son la materialización de esa necesidad.
+
+Complejidad: Se estima en función del número de inputs, la diversidad de sus fuentes (Archivos Normativos, Complementarios, etc.) y la naturaleza de la tabla (ej. CC2 requiere una conciliación compleja con el balance).
+
+Grupo Por Input: Agrupa tablas que comparten una base de inputs comunes, permitiendo optimizar su procesamiento. Por ejemplo, LR1 y LR2 comparten los mismos 4 inputs (G3). OV1 y OR1 comparten inputs del G2.
+
+Responsables: Se asignan roles genéricos. Riesgos (Crédito, Mercado, Liquidez, Operacional) y Finanzas son los dueños del dato y la lógica de negocio. TI / Datos es el responsable de la implementación técnica y automatización.",,,,,,,,,
